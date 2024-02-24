@@ -1,0 +1,4 @@
+ToolSet: 10.0 w64 (local)@E:\jetBrains\QT\Tools\mingw1120_64
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=E:/jetBrains/softwares/CLion 2023.3.3/bin/ninja/win/x64/ninja.exe

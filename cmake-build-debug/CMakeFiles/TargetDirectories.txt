@@ -1,0 +1,5 @@
+E:/jetBrains/Project/QTThreePointToLine/ThreePoint/cmake-build-debug/CMakeFiles/ThreePoint.dir
+E:/jetBrains/Project/QTThreePointToLine/ThreePoint/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/jetBrains/Project/QTThreePointToLine/ThreePoint/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/jetBrains/Project/QTThreePointToLine/ThreePoint/cmake-build-debug/CMakeFiles/ThreePoint_autogen_timestamp_deps.dir
+E:/jetBrains/Project/QTThreePointToLine/ThreePoint/cmake-build-debug/CMakeFiles/ThreePoint_autogen.dir

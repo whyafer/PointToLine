@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pointToLine</class>
+ <widget class="QWidget" name="pointToLine">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>538</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>pointToLine</string>
+  </property>
+  <widget class="QPushButton" name="bt1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>40</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>点连线</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>70</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>拟合直线</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt3">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>100</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>拟合曲线</string>
+   </property>
+  </widget>
+  <widget class="MyGView" name="gv">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>381</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyGView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">mygview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>bt3</sender>
+   <signal>clicked()</signal>
+   <receiver>pointToLine</receiver>
+   <slot>rb_onClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>463</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>465</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bt2</sender>
+   <signal>clicked()</signal>
+   <receiver>pointToLine</receiver>
+   <slot>rb_onClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>435</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bt1</sender>
+   <signal>clicked()</signal>
+   <receiver>pointToLine</receiver>
+   <slot>rb_onClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>418</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>410</x>
+     <y>16</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>rb_onClick()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,10 @@
+^E:\JETBRAINS\PROJECT\QTTHREEPOINTTOLINE\THREEPOINT\CMAKE-BUILD-DEBUG\CMAKEFILES\50E03EF24DA3E1306E3B5AE2CA94BFCD\GENERATE.STAMP.RULE
+setlocal
+"E:\jetBrains\softwares\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -SE:/jetBrains/Project/QTThreePointToLine/ThreePoint -BE:/jetBrains/Project/QTThreePointToLine/ThreePoint/cmake-build-debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/jetBrains/Project/QTThreePointToLine/ThreePoint/cmake-build-debug/ThreePoint.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

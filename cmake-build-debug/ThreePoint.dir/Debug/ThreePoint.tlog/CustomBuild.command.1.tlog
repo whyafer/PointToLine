@@ -1,0 +1,22 @@
+^E:\JETBRAINS\PROJECT\QTTHREEPOINTTOLINE\THREEPOINT\CMAKE-BUILD-DEBUG\CMAKEFILES\BD9A6C878B7128392B6DB7CB4E21DF35\AUTOUIC_(CONFIG).STAMP.RULE
+setlocal
+cd E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\JETBRAINS\PROJECT\QTTHREEPOINTTOLINE\THREEPOINT\CMAKELISTS.TXT
+setlocal
+"E:\jetBrains\softwares\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -SE:/jetBrains/Project/QTThreePointToLine/ThreePoint -BE:/jetBrains/Project/QTThreePointToLine/ThreePoint/cmake-build-debug --check-stamp-file E:/jetBrains/Project/QTThreePointToLine/ThreePoint/cmake-build-debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

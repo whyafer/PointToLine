@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\pointtoline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\mygview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\pointtoline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\mygview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\include_Debug\ui_pointtoline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\include_Release\ui_pointtoline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\include_MinSizeRel\ui_pointtoline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\include_RelWithDebInfo\ui_pointtoline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\CMakeFiles\bd9a6c878b7128392b6db7cb4e21df35\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\pointtoline.ui" />
+    <None Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\autouic_Debug.stamp" />
+    <None Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\autouic_Release.stamp" />
+    <None Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="E:\jetBrains\Project\QTThreePointToLine\ThreePoint\cmake-build-debug\ThreePoint_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AC2E015C-F835-32F7-82A6-CF4DCA1BBE74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2FAADED5-BA9B-3C7F-B746-2CFACFE507A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EFC6D4C5-29A6-333E-BA6A-44C7EDE8D2E2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
