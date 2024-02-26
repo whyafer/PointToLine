@@ -27,7 +27,7 @@ void MyGView::mousePressEvent(QMouseEvent *event) {
     QGraphicsEllipseItem *item = new QGraphicsEllipseItem(x - 18, y - 5, 10, 10);
 
     item->setBrush(Qt::red);
-
+    qItemsList.append(item);
     gs->addItem(item);
 }
 

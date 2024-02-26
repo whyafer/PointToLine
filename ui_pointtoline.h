@@ -47,7 +47,7 @@ public:
         gv->setMouseTracking(false);
         pb4 = new QPushButton(pointToLine);
         pb4->setObjectName("pb4");
-        pb4->setGeometry(QRect(410, 130, 91, 24));
+        pb4->setGeometry(QRect(410, 130, 111, 24));
 
         retranslateUi(pointToLine);
         QObject::connect(bt3, SIGNAL(clicked()), pointToLine, SLOT(rb_onClick()));
@@ -64,7 +64,7 @@ public:
         bt1->setText(QCoreApplication::translate("pointToLine", "\347\202\271\350\277\236\347\272\277", nullptr));
         bt2->setText(QCoreApplication::translate("pointToLine", "\346\213\237\345\220\210\347\233\264\347\272\277", nullptr));
         bt3->setText(QCoreApplication::translate("pointToLine", "\346\213\237\345\220\210\346\233\262\347\272\277", nullptr));
-        pb4->setText(QCoreApplication::translate("pointToLine", "\347\273\230\345\210\266\346\233\262\347\272\277", nullptr));
+        pb4->setText(QCoreApplication::translate("pointToLine", "\347\273\230\345\210\266\346\233\262\347\272\277\345\271\266\347\255\211\345\210\206", nullptr));
     } // retranslateUi
 
 };

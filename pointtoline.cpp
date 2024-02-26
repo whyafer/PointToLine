@@ -26,6 +26,7 @@ void pointToLine::rb_onClick() {
 
     QList<QPointF *> point;
 
+    //排除所有非点项目方法一
     QList<QGraphicsItem *> items = ui->gv->gs->items();
     QList<QGraphicsItem *> saveItems;
 
@@ -50,6 +51,17 @@ void pointToLine::rb_onClick() {
         point.append(new QPointF(rectF.x(), rectF.y()));
         //qDebug() << rectF.x()<<rectF.y();
     }
+
+    //排除所有非点项目方法二
+/*    ui->gv->gs->clear();
+    foreach(QGraphicsItem *item, ui->gv->qItemsList) {
+        ui->gv->gs->addItem(item);
+    }
+
+    for (QGraphicsItem *item: ui->gv->gs->items()) {
+        QRectF rectF = item->boundingRect();
+        point.append(new QPointF(rectF.x(), rectF.y()));
+    }*/
 
     if (name == "bt1") {
         if (point.count() > 1) {
@@ -114,7 +126,8 @@ void pointToLine::rb_onClick() {
         qDebug() << index;
         for (int j = 1; j < index; j++) {
             QPointF qPointF = smoothCurvePath1.pointAtPercent((float) j * mean / smoothCurvePath1.elementCount());
-            ui->gv->gs->addEllipse(qPointF.x() - 1, qPointF.y() - 1, 2, 2, QPen(Qt::yellow));
+            ui->gv->gs->addEllipse(qPointF.x() - 1, qPointF.y() - 1, 2, 2,
+                                   QPen(Qt::yellow), QBrush(Qt::yellow));
         }
     }
 }
