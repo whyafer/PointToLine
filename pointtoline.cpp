@@ -108,12 +108,14 @@ void pointToLine::rb_onClick() {
 
         ui->gv->gs->addPath(smoothCurvePath1, QPen(Qt::green));
 
-/*        QPainter painter(ui->gv);
-        painter.setRenderHint(QPainter::Antialiasing);
-        painter.setPen(QPen(Qt::black, 2));
-        // 绘制第一条平滑曲线和曲线上的顶点
-        painter.drawPath(smoothCurvePath1);
-        painter.setBrush(Qt::gray);*/
+        //等分
+        int mean = 1;
+        int index = smoothCurvePath1.elementCount() / mean;
+        qDebug() << index;
+        for (int j = 1; j < index; j++) {
+            QPointF qPointF = smoothCurvePath1.pointAtPercent((float) j * mean / smoothCurvePath1.elementCount());
+            ui->gv->gs->addEllipse(qPointF.x() - 1, qPointF.y() - 1, 2, 2, QPen(Qt::yellow));
+        }
     }
 }
 

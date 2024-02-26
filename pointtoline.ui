@@ -73,12 +73,12 @@
     <rect>
      <x>410</x>
      <y>130</y>
-     <width>91</width>
+     <width>111</width>
      <height>24</height>
     </rect>
    </property>
    <property name="text">
-    <string>绘制曲线</string>
+    <string>绘制曲线并等分</string>
    </property>
   </widget>
  </widget>
