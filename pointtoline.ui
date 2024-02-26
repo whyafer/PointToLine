@@ -68,6 +68,19 @@
     <bool>false</bool>
    </property>
   </widget>
+  <widget class="QPushButton" name="pb4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>130</y>
+     <width>91</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>绘制曲线</string>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
@@ -123,6 +136,22 @@
     <hint type="destinationlabel">
      <x>410</x>
      <y>16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb4</sender>
+   <signal>clicked()</signal>
+   <receiver>pointToLine</receiver>
+   <slot>rb_onClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>438</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>184</y>
     </hint>
    </hints>
   </connection>

@@ -24,7 +24,7 @@ void pointToLine::rb_onClick() {
     QPushButton *qPushButton = (QPushButton *) sender();
     QString name = qPushButton->objectName();
 
-    QList<QPointF*> point;
+    QList<QPointF *> point;
 
     QList<QGraphicsItem *> items = ui->gv->gs->items();
     QList<QGraphicsItem *> saveItems;
@@ -32,7 +32,7 @@ void pointToLine::rb_onClick() {
     for (QGraphicsItem *item: items) {
         if (QGraphicsEllipseItem::Type == item->type()) {
             saveItems.append(item);
-        } else if (QGraphicsLineItem::Type == item->type()) {
+        } else {
             ui->gv->gs->removeItem(item);
         }
     }
@@ -82,19 +82,38 @@ void pointToLine::rb_onClick() {
             }
         }
 
-    } else {
+    } else if (name == "bt3") {
         BezierCurve bc;
         QList<QPointF> curvePoint;
         QList<QPointF> points;
-        foreach(QPointF* pf,point){
-            points.append(*pf);
-        }
-        bc.createNBezierCurve(points,curvePoint,0.1);
+                foreach(QPointF *pf, point) {
+                points.append(*pf);
+            }
+        bc.createNBezierCurve(points, curvePoint, 0.1);
         for (int i = 0; i < curvePoint.count() - 1; i++) {
             ui->gv->gs->addLine(curvePoint[i].x() + 5, curvePoint[i].y() + 5,
                                 curvePoint[i + 1].x() + 5, curvePoint[i + 1].y() + 5,
                                 QPen(Qt::green));
         }
+    } else {
+        BezierCurve bc;
+        QList<QPointF> points;
+                foreach(QPointF *pf, point) {
+                pf->setX(pf->x() + 5);
+                pf->setY(pf->y() + 5);
+                points.append(*pf);
+            }
+        QPainterPath smoothCurvePath1; // 平滑曲线一
+        smoothCurvePath1 = bc.generateSmoothCurve(points);
+
+        ui->gv->gs->addPath(smoothCurvePath1, QPen(Qt::green));
+
+/*        QPainter painter(ui->gv);
+        painter.setRenderHint(QPainter::Antialiasing);
+        painter.setPen(QPen(Qt::black, 2));
+        // 绘制第一条平滑曲线和曲线上的顶点
+        painter.drawPath(smoothCurvePath1);
+        painter.setBrush(Qt::gray);*/
     }
 }
 
