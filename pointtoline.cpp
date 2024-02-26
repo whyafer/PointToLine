@@ -123,10 +123,9 @@ void pointToLine::rb_onClick() {
         //等分
         int mean = 1;
         int index = smoothCurvePath1.elementCount() / mean;
-        qDebug() << index;
         for (int j = 1; j < index; j++) {
             QPointF qPointF = smoothCurvePath1.pointAtPercent((float) j * mean / smoothCurvePath1.elementCount());
-            ui->gv->gs->addEllipse(qPointF.x() - 1, qPointF.y() - 1, 2, 2,
+            ui->gv->gs->addRect(qPointF.x() - 1, qPointF.y() - 1, 2, 2,
                                    QPen(Qt::yellow), QBrush(Qt::yellow));
         }
     }
